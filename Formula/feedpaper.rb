@@ -9,7 +9,7 @@ class Feedpaper < Formula
   depends_on arch: :arm64
 
   def install
-    libexec.install Dir["*"]
+    libexec.install Dir["feedpaper/*"]
     bin.install_symlink libexec/"feedpaper"
   end
 
