@@ -1,15 +1,16 @@
 class Feedpaper < Formula
   desc "Build an ePub newspaper from your unread Feedbin blog posts"
   homepage "https://github.com/jonashonecker/feedpaper"
-  url "https://github.com/jonashonecker/feedpaper/releases/download/v0.1.0/feedpaper-macos"
-  version "0.1.0"
-  sha256 "811882eff0884fa1b37d8171fa5bd4b214a8d9c131632293d012676aba7f5695"
+  url "https://github.com/jonashonecker/feedpaper/releases/download/v0.1.1/feedpaper-macos.tar.gz"
+  version "0.1.1"
+  sha256 "659a2428da1591869b943d0f30ef12d5b4e66295db2328405ce54a1f9de50817"
 
   depends_on :macos
   depends_on arch: :arm64
 
   def install
-    bin.install "feedpaper-macos" => "feedpaper"
+    libexec.install Dir["feedpaper/*"]
+    bin.install_symlink libexec/"feedpaper"
   end
 
   test do
