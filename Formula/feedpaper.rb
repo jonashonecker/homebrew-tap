@@ -1,9 +1,9 @@
 class Feedpaper < Formula
   desc "Build an ePub newspaper from your unread Feedbin blog posts"
   homepage "https://github.com/jonashonecker/feedpaper"
-  url "https://github.com/jonashonecker/feedpaper/releases/download/v0.1.3/feedpaper-macos.tar.gz"
-  version "0.1.3"
-  sha256 "df42e1075b82e41ac7ec4572173fa5519794c9c4fa8160165c32bccd478c08e3"
+  url "https://github.com/jonashonecker/feedpaper/releases/download/v0.1.4/feedpaper-macos.tar.gz"
+  version "0.1.4"
+  sha256 "34ff654226f49d07b5d2ba212488f5fc0bfda7b01bdffc5160f468345b648b3f"
 
   depends_on :macos
   depends_on arch: :arm64
